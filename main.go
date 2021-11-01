@@ -1,11 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"github.com/cuilan/file-index/components"
+	"github.com/cuilan/file-index/service"
+)
 
 func init() {
-
+	components.InitConfiger()
 }
 
 func main() {
-	fmt.Println("https://vscode.dev")
+	service.Index()
 }
