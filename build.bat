@@ -17,6 +17,6 @@ copy .\bat\clear.bat .\dist\
 copy .\conf\ .\dist\conf\
 
 cd dist
-ren main.exe file-index.exe
+ren main.exe FileIndex.exe
 
 REM PAUSE
