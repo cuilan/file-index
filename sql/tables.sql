@@ -17,7 +17,8 @@ CREATE TABLE `t_folder`
     `create_time` bigint        NOT NULL DEFAULT 0 COMMENT '创建时间',
     `update_time` bigint        NOT NULL DEFAULT 0 COMMENT '最后修改时间',
     PRIMARY KEY (`id`) USING BTREE,
-    KEY `idx_parent_id` (`parent_id`) USING BTREE
+    KEY `idx_parent_id` (`parent_id`) USING BTREE,
+    KEY `idx_name` (`name`) USING BTREE
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4
   COLLATE = utf8mb4_unicode_ci COMMENT = '目录表';
