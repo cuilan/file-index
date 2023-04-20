@@ -1,12 +1,16 @@
 package main
 
 import (
-	"github.com/cuilan/file-index/components"
+	"fmt"
+	"github.com/cuilan/file-index/configer"
 	"github.com/cuilan/file-index/service"
 )
 
 func init() {
-	components.InitConfiger()
+	if err := configer.InitLogger(); err != nil {
+		fmt.Println("init logger err", err)
+	}
+	configer.InitConfig()
 }
 
 func main() {
